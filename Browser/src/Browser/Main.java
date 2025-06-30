@@ -9,10 +9,16 @@ public class Main {
 		chrome.visitPage("www.facebook.com");
 		
 		chrome.printHistory();
-		
-		chrome.goBack();
-		chrome.goBack();
-
-		chrome.printHistory();
+		System.out.println();
+		try {
+			chrome.goBack();
+			chrome.goBack();
+			/*chrome.goBack();
+			chrome.goBack();*/
+			System.out.print("Sito: ");
+			chrome.printHistory();
+		} catch (java.util.EmptyStackException e) {
+			System.out.print("Errore: " + e);
+		}
 	}
 }
