@@ -1,9 +1,9 @@
 package Studente;
 
 public class Studente {
-    String nome;
-    String cognome;
-    int annoNascita;
+    private String nome;
+    private String cognome;
+    private int annoNascita;
 
     public Studente(String nome, String cognome, int annoNascita) {
         this.nome = nome;
@@ -14,5 +14,14 @@ public class Studente {
     public void stampaScheda() {
         System.out.println(nome + " " + cognome + ", nato nel " + annoNascita);
     }
-}
 
+    public String getNome() {
+        return nome;
+    }
+    public String getCognome() {
+        return cognome;
+    }
+    public int getAnnoNascita() {
+        return annoNascita;
+    }
+}
